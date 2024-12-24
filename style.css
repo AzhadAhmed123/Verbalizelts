@@ -1,0 +1,431 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway";
+}
+
+p {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+img {
+    width: 100%;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.main-style {
+    padding: 75px 15px;
+}
+
+.pageWidth {
+    max-width: 1280px;
+    margin: auto;
+}
+    
+.navbr {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.logo-text {
+    font-size: 25px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.link-items {
+    gap: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.link-item,
+button,
+.section-3-main-para,
+.section-3-main-text {
+    text-align: center;
+}
+
+.link-item {
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    width: 140px;
+    height: 45px;
+    gap: 0px;
+    border-radius: 100px 100px 100px 100px;
+    opacity: 0px;
+    border: none;
+    background: #FFCE31;
+    font-size: 14px;
+    font-weight: 700;
+    align-self: center;
+}
+
+.hr-1 {
+    max-width: 1145px;
+}
+
+.hero-section {
+    display: flex;
+}
+
+
+.text-items-h1 {
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 116px;
+    text-align: left;
+    line-height: 85px;
+}
+
+.text-items-para {
+    text-align: left;
+    margin-top: 35px;
+}
+
+.hero-section-input-btn {
+    display: flex;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.hero-section-input {
+    width: 325px;
+    height: 55px;
+    border-radius: 40px;
+    border: none;
+    background-color: #F5F5F5;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 36px;
+    color: #717171;
+    padding-left: 35px;
+}
+
+.col-1,
+.col-2 {
+    width: 50%;
+}
+
+.hero-section-img {
+    align-self: center;
+}
+
+.heropic {
+    width: 25%;
+}
+
+.herologos {
+    width: 50%;
+    align-self: center;
+}
+
+.header-2 {
+    border-top: 1px solid black;
+}
+
+.header-2-upper-text-h1 {
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.header-2-upper-text-para {
+    align-self: center;
+}
+
+.header-2-bottom-image-div-1 {
+    width: 50%;
+}
+
+.header-2-bottom-image {
+    padding-top: 50px;
+}
+
+
+/* The sidepanel menu */
+.sidepanel {
+    height: 250px;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+/* The sidepanel links */
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+.section-3-main-text {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+
+@media only screen and (max-width:768px) {
+    .hero-section {
+        flex-direction: column;
+    }
+
+    .header-2 {
+        border-top: none;
+    }
+
+    .hero-section-input-btn {
+        justify-content: space-between;
+    }
+
+    .heropic-herologos {
+        flex-direction: column;
+        justify-content: center;
+        gap: 75px;
+        padding-top: 5px;
+    }
+
+    .col-1,
+    .col-2 {
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .col-2 {
+        text-align: center;
+    }
+
+    .heropic {
+        width: 50%;
+    }
+
+    .herologos,
+    .header-2-upper-text,
+    .header-2-bottom-image-div-1 {
+        width: 100%;
+    }
+
+    .heropic-herologos {
+        align-items: center;
+    }
+
+    .header-2-upper-text {
+        flex-direction: column;
+        padding-top: 0px;
+    }
+
+    .header-2-upper-text-h1 {
+        font-size: 35px;
+        text-align: left;
+    }
+
+    .header-2-bottom-image {
+        flex-direction: column;
+    }
+
+    .link-items,
+    .nvabr-btn {
+        display: none;
+    }
+
+    .logo-text {
+        font-size: 40px;
+        align-items: center;
+        display: flex;
+    }
+
+    .navbr {
+        background-color: #FFCE31;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .openbtn {
+        border-top-left-radius: 10px;
+    }
+
+    .section-3-main-text {
+        font-size: 30px;
+    }
+
+    .ratings-items {
+        flex-direction: column;
+    }
+
+    .rating-item-1-h1 {
+        font-size: 30px;
+    }
+
+    .section-4-main-img {
+        width: 100% !important;
+    }
+    .footer-1 ,.footer-2-sub-div-1 ,.footer-2-sub-div-2,.footer-2-sub-div-3 , .footer-1-h4{
+        text-align: center;
+    }
+    .section-5{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+    .footer-1-para{
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .openbtn {
+        display: none;
+    }
+}
+
+.rating-item-1 {
+    text-align: center;
+}
+
+.rating-item-1-h1 {
+    font-size: 60px;
+    font-family: "Manrope";
+    font-weight: 800;
+}
+
+.rating-item-1-para {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.section-4 {
+    background-color: #FFCE31;
+}
+
+.section-4-maintext {
+    font-size: 60px;
+    max-width: 1280px;
+    font-weight: 700;
+    text-align: center;
+    padding: 50px 125px;
+    margin: 0;
+}
+
+.section-4-main-image-div {
+    display: flex;
+    justify-content: center;
+}
+
+.section-4-main-img {
+    width: 15%;
+}
+
+.section-5 {
+    border-bottom: 1px solid #818181;
+    padding-bottom: 25px;
+    padding-top: 75px;
+}
+
+
+.footer-1-h4 {
+    font-size: 36px;
+    margin: auto;
+    font-weight: 700;
+}
+
+.footer-1-para {
+    width: 50%; 
+    padding-top: 15px;
+    line-height: 30px;
+}
+
+.bottom-text {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 25px 0px;
+}
+
+.footer-2 {
+    display: flex;
+    gap: 50px;
+    text-align: left;
+    /* background-color: #FFCE31; */
+    /* padding-left: 100px; */
+}
+
+.footer-2-sub-div-1 {
+    width: 100px;
+    line-height: 50px;
+    /* background-color: aqua; */
+}
+
+.footer-2-sub-div-2 {
+    width: 175px;
+    line-height: 50px;
+    /* background-color: rgb(200, 245, 0); */
+}
+
+.footer-2-sub-div-3 {
+    width: px;
+    line-height: 50px;
+    /* background-color: rgb(255, 60, 0); */
+}
+
+@media only screen and (max-width:590px){
+    .section-4-main-image-div {
+        flex-direction: column;
+    }
+    .section-4-maintext{
+        text-align: center;
+    }
+}
